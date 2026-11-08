@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f8f6">
+    <meta name="description" content="Build real-world money skills, one small win at a time.">
+    <title>Money Moves — Learn money by doing</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-frame">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" data-route="learn" aria-label="Money Moves home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span class="brand-name">money<span>moves</span></span>
+        </a>
+        <p class="nav-caption">YOUR CLASSROOM</p>
+        <nav class="side-nav">
+          <button class="nav-link active" data-route="learn"><span class="nav-icon">⌂</span><span>Learn</span></button>
+          <button class="nav-link" data-route="simulator"><span class="nav-icon">↗</span><span>Money Moves game</span><span class="nav-new">PLAY</span></button>
+          <button class="nav-link" data-route="achievements"><span class="nav-icon">✦</span><span>Achievements</span></button>
+          <button class="nav-link" data-route="profile"><span class="nav-icon">◉</span><span>My progress</span></button>
+          <button class="nav-link" data-route="about"><span class="nav-icon">♡</span><span>About us</span></button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="guide-card">
+            <div class="guide-orb" aria-hidden="true">✦</div>
+            <strong>Small steps.<br>Big money smarts.</strong>
+            <span>Your financial future starts here.</span>
+          </div>
+          <div class="privacy-note"><span aria-hidden="true">🔒</span> Just practice money. No real accounts needed.</div>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <button class="mobile-brand" data-route="learn" aria-label="Money Moves home"><span class="brand-mark"><span></span></span><b>money<span>moves</span></b></button>
+          <div class="topbar-spacer"></div>
+          <div class="top-stat xp-stat" aria-label="Experience points"><span class="stat-symbol">✦</span><b id="xp-total">0</b><span>XP</span></div>
+          <div class="top-stat streak-stat" aria-label="Learning streak"><span class="stat-symbol">♨</span><b id="streak-total">0</b><span>day streak</span></div>
+          <button class="avatar-button" data-route="profile" aria-label="Open your progress"><span id="avatar-initial">M</span></button>
+        </header>
+        <main id="app" tabindex="-1"></main>
+      </div>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="mobile-nav-link active" data-route="learn"><span>⌂</span>Learn</button>
+      <button class="mobile-nav-link" data-route="simulator"><span>↗</span>Play</button>
+      <button class="mobile-nav-link" data-route="achievements"><span>✦</span>Badges</button>
+      <button class="mobile-nav-link" data-route="profile"><span>◉</span>Profile</button>
+      <button class="mobile-nav-link" data-route="about"><span>♡</span>About</button>
+    </nav>
+    <div id="overlay-root"></div>
+    <script src="financial.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
